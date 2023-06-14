@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Kanban Board
+          Kanban Board____01
         </a>
       </header>
     </div>
