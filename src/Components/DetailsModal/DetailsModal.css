@@ -1,0 +1,22 @@
+.show-button{
+    width: 60%;
+    margin-left: 20%;
+}
+.close-button{
+    margin-left: 43%;
+}
+.editable{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+.card-head{
+    color:rgb(89, 99, 135) !important;
+    font-weight: 700 !important;
+    /* margin-left:10vw !important ; */
+}
+span{
+    font-weight: 600;
+}
