@@ -7,16 +7,11 @@
 }
 .editable{
     display:flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
     flex-direction: column;
 }
 .card-head{
-    /* text-align: center; */
     color:rgb(89, 99, 135) !important;
     font-weight: 700 !important;
-    /* margin-left:10vw !important ; */
 }
 span{
     font-weight: 600;

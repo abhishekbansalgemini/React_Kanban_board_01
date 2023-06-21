@@ -14,7 +14,6 @@ function DetailsModal(props) {
             width:'25vw',
             transform: 'translate(-50%, -50%)',
             alignItem:'center',
-            // borderRadius:'5vw'
             borderRadius: '15px'
         },
     };
@@ -24,7 +23,6 @@ function DetailsModal(props) {
     }
 
     function afterOpenModal() {
-        // references are now sync'd and can be accessed.
         subtitle.style.color = '#f00';
     }
 

@@ -6,12 +6,11 @@ import Editable_Card from '../Editable/Editable_Card'
 
 function Board(props) {
 
-    const [showDropDown, setShowDropDown] = useState(false);
     return (
         <div className='board'>
             <div className='board_top'>
                 <p className='board_top_title'>{props.board?.title}<span className='counter'>{`  ${props.board?.cards?.length}`}</span></p>
-                <div className='board_top_more' onClick={() => setShowDropDown(true)}>
+                <div className='board_top_more'>
                 <X onClick={()=>props.removeBoard(props.board?.id)}></X>                    
                 </div>
 

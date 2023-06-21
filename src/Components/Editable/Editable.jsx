@@ -52,7 +52,7 @@ function Editable(props) {
                                 <h2  className="board-heading" ref={(_subtitle) => (subtitle = _subtitle)}>Column Title</h2>
 
                         <input type="text" placeholder={"Title"} autoFocus value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)} />
+                            onChange={(e) => setInputValue(e.target.value)} required/>
 
                         <div className="editable_edit_footer">
                             <button type='submit'>{props.buttonText || "Add"}</button>

@@ -55,66 +55,33 @@ const Login = () => {
                 alert("Invalid Login Credentials");
             }
         }
-
     }
 
     return (
 
         <>
-
             <div className="main-container">
-
-
-
-
-
-
                 <form className="form-container">
-
                     <div className="header">
-
                         <h1 className="register-heading">
-
                             Kanban Board
-
                         </h1>
-
                     </div>
-
                     <div className="input-field">
-
                         <label htmlFor="email">Email</label>
-
                         <input type="email"  placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-
                         <label htmlFor="password">Password</label>
-
                         <input type="password" placeholder="Password"  value={password} onChange={(e) => setPassword(e.target.value)} required/>
-
-
-
-
                     </div>
 
                     <div className="button-container">
-
                         <button onClick={submitForm} className="submit-button">Login</button>
-
                     </div>
                     <p>New user... <a onClick={() => { history.push('/signup') }}>Sign up</a></p>
-
                 </form>
-
-
             </div>
-
-
-
-
         </>
-
     )
-
 }
 
 export default Login;

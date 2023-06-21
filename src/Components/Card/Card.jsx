@@ -26,6 +26,7 @@ function Card(props) {
             }
             
           </div>
+        
           <DetailsModal Title={props.card?.title} Description = {props.card?.desc} StartDate = {props.card?.startDate} EndDate = { props.card?.endDate} 
             Assignee = {props.card?.assignee} Task = {props.card?.Task}></DetailsModal>
         </div> : ""}
