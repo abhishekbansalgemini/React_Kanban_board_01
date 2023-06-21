@@ -1,8 +1,10 @@
 import React from 'react'
-
+import './Error.css'
 function Error() {
   return (
-    <h1>Page Not Found..</h1>
+    <div className='error-message'>
+        <span className='error'>Page Not Found..</span>
+    </div>
   )
 }
 

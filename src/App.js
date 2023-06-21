@@ -14,21 +14,21 @@ function App() {
       cards: [
         {
           id: Date.now() + Math.random(),
-          title: "Card 1",
-          desc: "First card made",
-          startDate: "",
-          endDate: "",
-          assignee: "",
-          Task: ""
+          title: "Kanban Board",
+          desc: "Design a kanban board using react",
+          startDate: "2023-06-21",
+          endDate: "2023-06-25",
+          assignee: "Shani Gupta",
+          Task: "Add Drag and Drop Functionality"
         },
         {
           id: Date.now() + Math.random(),
-          title: "Card 2",
-          desc: "Second card made",
-          startDate: "",
-          endDate: "",
-          assignee: "",
-          Task: ""
+          title: "Kanban Board",
+          desc: "Design a kanban board using react",
+          startDate: "2023-06-21",
+          endDate: "2023-06-25",
+          assignee: "Piyush Dangi",
+          Task: "Add different columns and perform crud operations on them"
         }
       ]
     },
@@ -38,21 +38,21 @@ function App() {
       cards: [
         {
           id: Date.now() + Math.random(),
-          title: "Card 1",
-          desc: "First card made",
-          startDate: "",
-          endDate: "",
-          assignee: "",
-          Task: ""
+          title: "Kanban Board",
+          desc: "Design a kanban board using react",
+          startDate: "2023-06-21",
+          endDate: "2023-06-25",
+          assignee: "Arushi Thakur",
+          Task: "Add cards and perform crud operations on them"
         },
         {
           id: Date.now() + Math.random(),
-          title: "Card 2",
-          desc: "Second card made",
-          startDate: "",
-          endDate: "",
-          assignee: "",
-          Task: ""
+          title: "Kanban Board",
+          desc: "Design a kanban board using react",
+          startDate: "2023-06-21",
+          endDate: "2023-06-25",
+          assignee: "Abhishek Singh",
+          Task: "Add search functionality"
         }
       ]
     },
@@ -62,22 +62,21 @@ function App() {
       cards: [
         {
           id: Date.now() + Math.random(),
-          title: "Card 1",
-          tasks: [],
-          desc: "First card made",
-          startDate: "",
-          endDate: "",
-          assignee: "",
-          Task: ""
+          title: "Kanban Board",
+          desc: "Design a kanban board using react",
+          startDate: "2023-06-21",
+          endDate: "2023-06-25",
+          assignee: "Sai Teja",
+          Task: "Add login signup functionalities"
         },
         {
           id: Date.now() + Math.random(),
-          title: "Card 2",
-          desc: "Second card made",
-          startDate: "",
-          endDate: "",
-          assignee: "",
-          Task: ""
+          title: "Kanban Board",
+          desc: "Design a kanban board using react",
+          startDate: "2023-06-21",
+          endDate: "2023-06-25",
+          assignee: "Manisha Mishra",
+          Task: "Make navbar and add routing in it"
         }
       ]
     }

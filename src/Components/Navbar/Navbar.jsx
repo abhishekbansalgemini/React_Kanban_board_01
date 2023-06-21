@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './Navbar.css'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-
+import {LogIn} from 'react-feather'
 
 function ShowNavbar(props) {
     const [inputValue, setInputValue] = useState("");
@@ -42,9 +42,8 @@ function ShowNavbar(props) {
                             value={inputValue}
                             onChange={(e) => { setInputValue(e.target.value); }}
                         />
-
-                        <Nav.Link className="nav-links" onClick={LogOut}>Logout</Nav.Link>
-
+                        <Nav.Link className="nav-links" onClick={LogOut}><LogIn></LogIn></Nav.Link>
+                        
                     </Form>
                 </Navbar.Collapse>
             </Container>

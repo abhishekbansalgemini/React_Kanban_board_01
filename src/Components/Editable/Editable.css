@@ -54,6 +54,8 @@
     cursor: pointer;
 }
 .board-heading{
-    color:rgb(89, 99, 135) !important;
-    font-weight: 700 !important;
+    /* color:rgb(89, 99, 135) !important; */
+    color: black !important;
+    font-weight: normal !important;
+
 }

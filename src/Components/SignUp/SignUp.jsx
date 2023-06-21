@@ -15,6 +15,31 @@ const SignUp = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
+    if(name.trim() === ""){
+      alert("Please enter your name");
+      return;
+    }
+    else if(!/^[a-zA-Z\s]+$/.test(name)){
+      alert("Please enter a valid name");
+      return;
+    }
+    const mailFormat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    if (email.trim() === "") {
+      alert("Please enter your email");
+      return;
+    }
+    else if (!mailFormat.test(email)) {
+      alert("Please enter a valid email");
+      return;
+    }
+    if (password.trim() === "") {
+      alert("Please enter your password");
+      return;
+    }
+    else if (password.length < 8) {
+      alert("Password must be of at least 8 characters");
+      return;
+    }
     const objRecord = {
       name: name,
       email: email,
@@ -32,7 +57,7 @@ const SignUp = () => {
       setRecords(records);
       console.log(records);
       localStorage.setItem("userdata", JSON.stringify(records));
-      alert("User Registered Successfully")
+      alert("User Registered Successfully!!")
       history.push("/login")
     }
   }
@@ -58,15 +83,15 @@ const SignUp = () => {
 
             <label htmlFor="name">Name:</label>
 
-            <input type="text" placeholder="enter your name" value={name} onChange={(e) => setName(e.target.value)} />
+            <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
 
             <label htmlFor="email">Email</label>
 
-            <input type="email" placeholder="enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
             <label htmlFor="password">Password</label>
 
-            <input type="password" placeholder="enter password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
           </div>
 

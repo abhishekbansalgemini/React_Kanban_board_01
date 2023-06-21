@@ -49,9 +49,9 @@ function Editable(props) {
                         setInputValue("");
                         closeModal();
                     }}>
-                                <h2  className="board-heading" ref={(_subtitle) => (subtitle = _subtitle)}>Board Details</h2>
+                                <h2  className="board-heading" ref={(_subtitle) => (subtitle = _subtitle)}>Column Title</h2>
 
-                        <input type="text" placeholder={props.placeholder || "Enter Item"} autoFocus value={inputValue}
+                        <input type="text" placeholder={"Title"} autoFocus value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)} />
 
                         <div className="editable_edit_footer">

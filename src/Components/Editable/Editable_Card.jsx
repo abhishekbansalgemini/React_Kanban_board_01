@@ -60,35 +60,35 @@ function Editable_Card(props) {
                 <form className={`editable_edit ${""}`} onSubmit={submitDetails}>
                     <h2 className='card-head' ref={(_subtitle) => (subtitle = _subtitle)}>Card Details</h2>
 
-                   <div className='data-input'> <label>Card Name :</label>
-                    <input type="text" placeholder={props.placeholder || "Enter Item"} autoFocus value={inputValue}
+                   <div className='data-input'> <label>Title  :</label>
+                    <input type="text" placeholder={"Title"} autoFocus value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}  required /></div>
 
                         <div className='data-input'> <label>Tasks :</label>
-                    <input type="text" placeholder="Enter Tasks" autoFocus value={Task}
+                    <input type="text" placeholder="Tasks"  value={Task}
                         onChange={(e) => setTask(e.target.value)}  required />   </div> 
 
                        <div className='data-input'>  <label>Start Date :</label>
-                    <input type="date" placeholder="Enter Start Date" autoFocus value={startDate}
+                    <input type="date" placeholder="Start Date"  value={startDate}
                         onChange={(e) => setStartDate(e.target.value)}  required/> </div>
 
                        <div className='data-input'> <label >End Date :</label>
-                    <input type="date" placeholder="Enter End Date" autoFocus value={endDate}
+                    <input type="date" placeholder="End Date"  value={endDate}
                         onChange={(e) => setEndDate(e.target.value)}  required />   </div>   
 
                       <div className='data-input'>   <label>Assignee :</label>
-                    <input type="text" placeholder="Enter Assignee Name" autoFocus value={assignee}
+                    <input type="text" placeholder="Assignee"  value={assignee}
                         onChange={(e) => setAssignee(e.target.value)}  required />   </div>   
 
                        <div className='data-input'>  <label>Description :</label>
-                    <textarea type="text" placeholder={"Enter Card Description"} value={description}
+                    <textarea type="text" placeholder={"Description"} rows={2} cols={28} value={description}
                         onChange={(e) => setDescription(e.target.value)}  required /></div>
 
 
 
                     <div className="editable_edit_footer">
-                        <button className='btn btn-info' type='submit'>{props.buttonText || "Add"}</button>
-                        <button className='btn btn-secondary' onClick={closeModal}>close</button>
+                        <button type='submit'>{props.buttonText || "Add"}</button>
+                        <button onClick={closeModal}>Close</button>
                     </div>
 
 

@@ -16,7 +16,23 @@ const Login = () => {
     const submitForm = (e) => {
 
         e.preventDefault();
-
+        const mailFormat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+        if(email.trim() === ""){
+            alert("Please enter the email first");
+            return;
+        }
+        else if(!mailFormat.test(email)){
+            alert("Please enter a valid email");
+            return;
+        }
+        if(password.trim() === ""){
+            alert("Please enter the password first");
+            return;
+        }
+        else if(password.length < 8){
+            alert("Password must be of at least 8 characters");
+            return;
+        }
         const userLogin = JSON.parse(localStorage.getItem("userdata"));
         if (userLogin === null) {
             alert("Invalid Login Credentials");
@@ -30,7 +46,7 @@ const Login = () => {
                         email: email,
                         password: password
                     }))
-                    alert("login Successfull")
+                    alert("Login Successful")
                     history.push("/");
                     break;
                 }
@@ -69,11 +85,11 @@ const Login = () => {
 
                         <label htmlFor="email">Email</label>
 
-                        <input type="email"  placeholder="enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+                        <input type="email"  placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
 
                         <label htmlFor="password">Password</label>
 
-                        <input type="password" placeholder="enter password"  value={password} onChange={(e) => setPassword(e.target.value)} required/>
+                        <input type="password" placeholder="Password"  value={password} onChange={(e) => setPassword(e.target.value)} required/>
 
 
 

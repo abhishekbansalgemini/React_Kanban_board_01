@@ -11,10 +11,11 @@ function DetailsModal(props) {
             left: '50%',
             right: 'auto',
             bottom: 'auto',
-            width:'50vw',
+            width:'25vw',
             transform: 'translate(-50%, -50%)',
             alignItem:'center',
-            borderRadius:'5vw'
+            // borderRadius:'5vw'
+            borderRadius: '15px'
         },
     };
 
