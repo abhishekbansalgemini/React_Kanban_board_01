@@ -98,7 +98,7 @@ function Update(props) {
 
 
                         <div className="editable_edit_footer">
-                            <button type='submit'>{props.buttonText || "Add"}</button>
+                            <button type='submit'>{"Update"}</button>
                             <button onClick={closeModal}>Close</button>
                         </div>
 
