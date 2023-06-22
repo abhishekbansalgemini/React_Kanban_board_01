@@ -43,6 +43,10 @@ function Editable_Card(props) {
         setShowEdit(false);
         setInputValue("");
         setDescription("");
+        setAssignee("");
+        setEndDate("");
+        setTask("");
+        setStartDate("");
         closeModal();
     }
     return (<>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Card.css"
 import { X } from 'react-feather'
 import DetailsModal from '../DetailsModal/DetailsModal'
+import Update from '../Update/Update'
 
 function Card(props) {
   return (
@@ -22,13 +23,18 @@ function Card(props) {
             {
               <p>
                 {props.card?.desc}
-              </p> 
+              </p>
             }
-            
+
           </div>
-        
-          <DetailsModal Title={props.card?.title} Description = {props.card?.desc} StartDate = {props.card?.startDate} EndDate = { props.card?.endDate} 
-            Assignee = {props.card?.assignee} Task = {props.card?.Task}></DetailsModal>
+
+          <div className="buttons">
+            <DetailsModal Title={props.card?.title} Description={props.card?.desc} StartDate={props.card?.startDate} EndDate={props.card?.endDate}
+              Assignee={props.card?.assignee} Task={props.card?.Task}></DetailsModal>
+
+            <Update Id={props.card?.id} Title={props.card?.title} Description={props.card?.desc} StartDate={props.card?.startDate} EndDate={props.card?.endDate}
+              Assignee={props.card?.assignee} Task={props.card?.Task}></Update>
+          </div>
         </div> : ""}
     </>
 
