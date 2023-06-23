@@ -1,3 +1,8 @@
+To start this project....You have to install multiple dependencies
+1. run command npm install
+2. After that run.... npn install react-feather react-router-dom@5.3.4 react-modal react-bootstrap bootstrap
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
